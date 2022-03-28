@@ -17,10 +17,11 @@
     display: none;
 }
 
-.mazoo{
+.panel{
     width: 20%;
-    display: block;
+    display: none;
     float: right;
+    margin-top: 10%;
 }
 #mazo{
     max-width: 50%;

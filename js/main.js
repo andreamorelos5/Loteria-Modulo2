@@ -1,16 +1,16 @@
 
-// const botonesInicio = document.getElementsByClassName(className, "btn btn-warnings")
+
 const boton1 = document.getElementById("butTab1")
 const boton2 = document.getElementById("butTab2")
 const boton3 = document.getElementById("butTab3")
 butTab1.addEventListener("click", mostrarTablero1);
-butTab1.addEventListener("click", cambiarCarta);
+butTab1.addEventListener("click", mostrarPanel);
 
 butTab2.addEventListener("click", mostrarTablero2);
-butTab2.addEventListener("click", cambiarCarta);
+butTab2.addEventListener("click", mostrarPanel);
 
 butTab3.addEventListener("click", mostrarTablero3);
-butTab3.addEventListener("click", cambiarCarta);
+butTab3.addEventListener("click", mostrarPanel);
 
 
 // Funciones para mostrar cada tablero
@@ -39,6 +39,19 @@ function mostrarTablero3 (){
         tablero3.style.display = "none";
     }
 }
+
+
+// Función para desplegar el menú lateral con el mazo y botones
+function mostrarPanel(){
+    let panel = document.getElementById("panel");
+    if (panel.style.display === "none") {
+        panel.style.display = "block";
+    } else {
+        panel.style.display = "none";
+    }   
+}
+
+
 
 // // Funcion para mostrar el mazo aleatoriamente
 
