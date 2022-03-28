@@ -1,0 +1,28 @@
+.selecTab{
+    width: 80%;
+    display: block;
+    float: left;
+}
+.carta{
+    max-width: 100%;
+    height: auto;
+}
+
+.tablero{
+    width: 30%;
+    
+}
+
+.tableros{
+    display: none;
+}
+
+.mazoo{
+    width: 20%;
+    display: block;
+    float: right;
+}
+#mazo{
+    max-width: 50%;
+    border: 2px solid black;
+}
