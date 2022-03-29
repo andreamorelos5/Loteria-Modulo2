@@ -1,3 +1,19 @@
+body{
+    font-family: 'EB Garamond', serif;
+    background-color: #f0c2e0;
+}
+
+header{
+    color: white;
+    background-color: #ee9ed3;
+    padding: auto;
+}
+
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
 .selecTab{
     width: 80%;
     display: block;
@@ -6,6 +22,7 @@
 .carta{
     max-width: 100%;
     height: auto;
+    
 }
 
 .tablero{
@@ -23,7 +40,20 @@
     float: right;
     margin-top: 10%;
 }
+
 #mazo{
     max-width: 50%;
-    border: 2px solid black;
+    border: 2px solid white;
+
 }
+
+.btn { 
+    color: white;
+    background-color: rgb(97, 8, 60);
+    margin: 5px;
+}
+
+.btn-warning:hover {
+    background-color: white;
+}
+
