@@ -1,17 +1,24 @@
+
 body{
     font-family: 'EB Garamond', serif;
-    background-color: #f0c2e0;
+    background-color: #f0edc2;
 }
 
 header{
-    color: white;
-    background-color: #ee9ed3;
-    padding: auto;
+    background: url(https://tightwriters.com/wp-content/uploads/2021/05/Cuales-son-las-54-figuras-de-la-Loteria-Mexicana1-min.jpg);
+    background-size: cover;
+    height: 6rem;
 }
 
 header h1{
+    color: white;
     font-size: 4rem;
     text-align: center;
+}
+
+p{
+    margin-top: 1rem;
+    font-size: 2rem;
 }
 
 .selecTab{
@@ -23,6 +30,7 @@ header h1{
     max-width: 100%;
     height: auto;
     
+    cursor: pointer;
 }
 
 .tablero{
@@ -49,11 +57,14 @@ header h1{
 
 .btn { 
     color: white;
-    background-color: rgb(97, 8, 60);
     margin: 5px;
+    display: flex;
 }
 
 .btn-warning:hover {
     background-color: white;
 }
 
+.col:hover{
+    cursor: pointer;
+}
