@@ -62,6 +62,9 @@ function mostrarPanel(){
 //     mazo.innerHTML='<img src="../cartas/'+aleatorio+'.jpg" alt="">'
 //  }
 
+
+
+
 const numCartas = 54;
 function mazoRand(numCartas){
     // creamos un numero al azar entre 1 y 10 (o cual sea la cantidad de imágenes)
