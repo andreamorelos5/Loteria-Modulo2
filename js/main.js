@@ -63,7 +63,7 @@ function mostrarPanel(){
 //  }
 
 
-
+// Funcion para iniciar juego y barajear
 
 const numCartas = 54;
 function mazoRand(numCartas){
@@ -130,3 +130,13 @@ cartasMazo[53] = "../cartas/54.jpg"
 function cambiarCarta(){
     document.getElementById("mazo").src = cartasMazo[mazoRand(54)-1];
 }
+
+const butIniciar = document.getElementById("butIniciar")
+const butBarajear = document.getElementById("butBarajear")
+
+butIniciar.addEventListener("click", function() {
+    document.getElementById("mazo").src = cartasMazo[mazoRand(54)-1];
+    // onClick code
+}, {once : true});
+
+butBarajear.addEventListener("click", cambiarCarta)
