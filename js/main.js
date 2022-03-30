@@ -19,6 +19,8 @@ function mostrarTablero1 (){
     let tablero1 = document.getElementById("tablero1");
     if (tablero1.style.display === "none") {
         tablero1.style.display = "block";
+        tablero2.style.display = "none";
+        tablero3.style.display = "none";
     } else {
         tablero1.style.display = "none";
     }
@@ -27,6 +29,8 @@ function mostrarTablero2 (){
     let tablero2 = document.getElementById("tablero2");
     if (tablero2.style.display === "none") {
         tablero2.style.display = "block";
+        tablero1.style.display = "none";
+        tablero3.style.display = "none";
     } else {
         tablero2.style.display = "none";
     }
@@ -35,6 +39,8 @@ function mostrarTablero3 (){
     let tablero3 = document.getElementById("tablero3");
     if (tablero3.style.display === "none") {
         tablero3.style.display = "block";
+        tablero1.style.display = "none";
+        tablero2.style.display = "none";
     } else {
         tablero3.style.display = "none";
     }
