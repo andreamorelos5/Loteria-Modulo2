@@ -3,14 +3,14 @@
 const boton1 = document.getElementById("butTab1")
 const boton2 = document.getElementById("butTab2")
 const boton3 = document.getElementById("butTab3")
-butTab1.addEventListener("click", mostrarTablero1);
-butTab1.addEventListener("click", mostrarPanel);
+boton1.addEventListener("click", mostrarTablero1);
+boton1.addEventListener("click", mostrarPanel);
 
-butTab2.addEventListener("click", mostrarTablero2);
-butTab2.addEventListener("click", mostrarPanel);
+boton2.addEventListener("click", mostrarTablero2);
+boton2.addEventListener("click", mostrarPanel);
 
-butTab3.addEventListener("click", mostrarTablero3);
-butTab3.addEventListener("click", mostrarPanel);
+boton3.addEventListener("click", mostrarTablero3);
+boton3.addEventListener("click", mostrarPanel);
 
 
 // Funciones para mostrar cada tablero
@@ -142,6 +142,21 @@ const butBarajear = document.getElementById("butBarajear")
 
 butIniciar.addEventListener("click", function() {
     document.getElementById("mazo").src = cartasMazo[mazoRand(54)-1];
+    let cartas = document.getElementsByClassName("col")
+    for (var i = 0; i < cartas.length; i++){
+        cartas[i].classList.remove("pe-none"); 
+    }
+    if (tablero1.style.display === "block") {
+        boton2.style.display = "none";
+        boton3.style.display = "none";
+    } else if(tablero2.style.display === "block"){
+        boton1.style.display = "none";
+        boton3.style.display = "none";
+    } else if(tablero3.style.display === "block"){
+        boton1.style.display = "none";
+        boton2.style.display = "none";
+    }
+
     // onClick code
 }, {once : true});
 
