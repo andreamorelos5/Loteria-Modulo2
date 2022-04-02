@@ -26,6 +26,7 @@ p{
     display: block;
     float: left;
 }
+
 .carta{
     max-width: 100%;
     height: auto;
@@ -65,6 +66,3 @@ p{
     background-color: white;
 }
 
-.col:hover{
-    cursor: pointer;
-}

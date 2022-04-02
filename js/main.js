@@ -142,7 +142,34 @@ const butBarajear = document.getElementById("butBarajear")
 
 butIniciar.addEventListener("click", function() {
     document.getElementById("mazo").src = cartasMazo[mazoRand(54)-1];
+    document.getElementsByClassName("imagen col p-0 pe-none").classList.remove ("pe-none");
+    document.getElementById("removeClass1").classList.remove ("pe-none");
+    document.getElementById("removeClass2").classList.remove ("pe-none");
+
+    if( tablero1 === "block") {
+        document.getElementById(butTab2).style.display = "none"; 
+        document.getElementById(butTab3).style.visibility = "hidden";
     // onClick code
+    //En esta misma función desabilitar los botones de los tableros no seleccionados 
+
+    }
 }, {once : true});
 
 butBarajear.addEventListener("click", cambiarCarta)
+
+// function clickear () {
+//     document.getElementById("prueba").classList.add ("pe-auto");
+// }
+
+// butIniciar.addEventListener("click", clickear);
+
+
+
+// function clickTablero() {
+//     var click = document.getElementsByClassName("col");
+//     click.oneclick = saySomenthing;
+// }
+
+// function saySomenthing() {
+//     console.log("Hiciste clic en una carta");
+// }
